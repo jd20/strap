@@ -43,4 +43,4 @@ Stable and in active development.
 
 ## License
 Strap is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
-The full license text is available in [LICENSE.txt](https://github.com/mikemcquaid/strap/blob/master/LICENSE.txt).
+The full license text is available in [LICENSE.txt](https://github.com/jd20/strap/blob/master/LICENSE.txt).

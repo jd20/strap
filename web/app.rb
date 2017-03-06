@@ -8,7 +8,7 @@ GITHUB_KEY = ENV["GITHUB_KEY"]
 GITHUB_SECRET = ENV["GITHUB_SECRET"]
 SESSION_SECRET = ENV["SESSION_SECRET"] || SecureRandom.hex
 STRAP_ISSUES_URL = ENV["STRAP_ISSUES_URL"] || \
-                   "https://github.com/mikemcquaid/strap/issues/new"
+                   "https://github.com/jd20/strap/issues/new"
 STRAP_BEFORE_INSTALL = ENV["STRAP_BEFORE_INSTALL"]
 
 set :sessions, secret: SESSION_SECRET
@@ -38,7 +38,7 @@ get "/" do
 
   @title = "Strap"
   @text = <<-EOS
-Strap is a script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails/web development but installs the minimal set of software every macOS developer will want.
+Strap is a script to bootstrap a minimal macOS development system. This is a minimal version of Mike McQuaid's original tool, which does only the bare minimum necessary to clone and run your dotfiles repo. It's expected that any further customization needed, will be taken care of by your dotfiles setup.
 
 To Strap your system:
 <ol>
@@ -50,7 +50,7 @@ To Strap your system:
   <li>Install additional software with <code>brew install</code> and <code>brew cask install</code>.</li>
 </ol>
 
-<a href="https://github.com/mikemcquaid/strap"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="//aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/jd20/strap"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="//aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
 EOS
   erb :root
 end
